@@ -1,4 +1,4 @@
-# @adamj/object-property-tree
+# object-property-tree
 
 [![JSR](https://jsr.io/badges/@adamj/object-property-tree)](https://jsr.io/@adamj/object-property-tree)
 [![JSR Score](https://jsr.io/score/@adamj/object-property-tree)](https://jsr.io/score/@adamj/object-property-tree)
@@ -30,13 +30,13 @@ The simplest way to use the package is with `logPropertyTree`, which builds the 
 logPropertyTree(obj: unknown, maxDepth: number = 3, rootName?: string)
 ```
 
-Build an object's property tree:
+**Build an object's property tree**
+- Throws `InvalidDepthError` if `maxDepth` is negative or not an integer.
 ```typescript
 buildPropertyTree(obj: unknown, maxDepth, rootName?: string): PropertyTreeNode
 ```
-- Throws `InvalidDepthError` if `maxDepth` is negative or not an integer.
 
-Format a tree into a readable string (or any tree node and its children).
+**Format a tree into a readable string** (or any tree node and its children).
 ```typescript
 formatPropertyTreeToString(rootNode: PropertyTreeNode): string
 ```
@@ -98,7 +98,7 @@ Log the object root only:
 ```typescript
 import { logPropertyTree } from "@adamj/object-property-tree"
 
-console.log("\nLogging only root (max depth 0):");
+console.log("Logging only root (max depth 0):");
 logPropertyTree(complexObject, 0); 
 ```
 
@@ -107,11 +107,12 @@ Logging only root (max depth 0):
 └─ root (object)
 ```
 
-It also works logging primitives too:
+It can handle primitive values too:
 
 ```typescript
-console.log("\nLogging primitive:");
+import { logPropertyTree } from "@adamj/object-property-tree"
 
+console.log("Logging primitive:");
 logPropertyTree("Just a string", 1); 
 ```
 
