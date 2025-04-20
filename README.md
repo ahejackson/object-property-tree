@@ -15,10 +15,18 @@ Useful for logging complex object structures during development and debugging.
 
 ## Installation
 
-Add the package to your Deno project:
+Add the package to your project from [JSR](https://jsr.io/badges/@adamj/object-property-tree).
+
+Using Deno:
 
 ```sh
 deno add jsr:@adamj/object-property-tree
+```
+
+Using npm (or equivalent):
+
+```sh
+npx jsr add @adamj/object-property-tree
 ```
 
 
