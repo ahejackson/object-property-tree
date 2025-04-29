@@ -15,18 +15,21 @@ Useful for logging complex object structures during development and debugging.
 
 ## Installation
 
-Add the package to your project from [JSR](https://jsr.io/badges/@adamj/object-property-tree).
+Add the package to your project from [JSR](https://jsr.io/@adamj/object-property-tree).
 
-Using Deno:
+Using Deno, pnpm 10.9+, and yarn 4.9+ with first class JSR support:
 
 ```sh
 deno add jsr:@adamj/object-property-tree
+pnpm add jsr:@adamj/object-property-tree
+yarn add jsr:@adamj/object-property-tree
 ```
 
-Using npm (or equivalent):
+Using npm or bun
 
 ```sh
 npx jsr add @adamj/object-property-tree
+bunx jsr add @adamj/object-property-tree
 ```
 
 
