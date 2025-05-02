@@ -1,7 +1,6 @@
 # object-property-tree
 
 [![JSR](https://jsr.io/badges/@adamj/object-property-tree)](https://jsr.io/@adamj/object-property-tree)
-[![JSR Score](https://jsr.io/score/@adamj/object-property-tree)](https://jsr.io/score/@adamj/object-property-tree)
 
 Simple TypeScript utility to build and display a the property tree of JavaScript objects. Handles nesting, circular references, and access errors.
 
@@ -17,18 +16,28 @@ Useful for logging complex object structures during development and debugging.
 
 Add the package to your project from [JSR](https://jsr.io/@adamj/object-property-tree).
 
-Using Deno, pnpm 10.9+, and yarn 4.9+ with first class JSR support:
-
+Deno:
 ```sh
 deno add jsr:@adamj/object-property-tree
+```
+
+pnpm 10.9+
+```sh
 pnpm add jsr:@adamj/object-property-tree
+```
+
+yarn 4.9+
+```sh
 yarn add jsr:@adamj/object-property-tree
 ```
 
-Using npm or bun
-
+npm
 ```sh
 npx jsr add @adamj/object-property-tree
+```
+
+bun
+```sh
 bunx jsr add @adamj/object-property-tree
 ```
 
