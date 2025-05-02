@@ -24,7 +24,7 @@
  * formatPropertyTreeToString(rootNode: PropertyTreeNode): string
  * ```
  *
- * ## Example
+ * ## Examples
  *
  * For a complex object with a circular reference:
  *
@@ -47,7 +47,8 @@
  * (complexObject as any).user.self = complexObject.user;
  * ```
  *
- * Log the object's property tree with a max depth of 3:
+ * ### Log the object's property tree
+ * With a max depth of 3
  *
  * ```ts
  * import { logPropertyTree } from "@adamj/object-property-tree"
@@ -56,7 +57,6 @@
  * logPropertyTree(complexObject, 3, "myObject");
  * ```
  *
- * Prints:
  * ```text
  * Logging property tree (max depth 3):
  * └─ myObject (object)
@@ -77,7 +77,8 @@
  *       └─ method (function)
  * ```
  *
- * Log the object root only:
+ * ### Log the object root only
+ * Setting the max depth to 0
  *
  * ```ts
  * import { logPropertyTree } from "@adamj/object-property-tree"
@@ -86,13 +87,12 @@
  * logPropertyTree(complexObject, 0);
  * ```
  *
- * Prints:
  * ```text
  * Logging only root (max depth 0):
  * └─ root (object)
  * ```
  *
- * It can handle primitive values too:
+ * ### Handling primitive values
  *
  * ```ts
  * import { logPropertyTree } from "@adamj/object-property-tree"
@@ -101,7 +101,6 @@
  * logPropertyTree("Just a string", 1);
  * ```
  *
- * Prints:
  * ```text
  * Logging primitive:
  * └─ root (string): "Just a string"

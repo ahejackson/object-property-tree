@@ -42,7 +42,7 @@ bunx jsr add @adamj/object-property-tree
 ```
 
 
-## Guide
+## Usage
 
 The simplest way to use the package is with `logPropertyTree`, which builds the tree and prints its formatted representation directly to the console:
 
@@ -61,7 +61,7 @@ buildPropertyTree(obj: unknown, maxDepth, rootName?: string): PropertyTreeNode
 formatPropertyTreeToString(rootNode: PropertyTreeNode): string
 ```
 
-## Example
+## Examples
 
 For a complex object with a circular reference:
 
