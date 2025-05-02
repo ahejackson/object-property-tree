@@ -2,10 +2,8 @@
  * This module contains functions to build a tree representation of a JavaScript object
  * and format it for logging. Handles complex objects, arrays, primitives,
  * circular references, and property access errors gracefully.
- * @module
  *
- *
- * ## Guide
+ * ## Usage
  *
  * The simplest way to use the package is with {@linkcode logPropertyTree}, which builds the tree and prints its formatted representation directly to the console:
  *
@@ -58,6 +56,7 @@
  * logPropertyTree(complexObject, 3, "myObject");
  * ```
  *
+ * Prints:
  * ```text
  * Logging property tree (max depth 3):
  * └─ myObject (object)
@@ -87,6 +86,7 @@
  * logPropertyTree(complexObject, 0);
  * ```
  *
+ * Prints:
  * ```text
  * Logging only root (max depth 0):
  * └─ root (object)
@@ -101,10 +101,13 @@
  * logPropertyTree("Just a string", 1);
  * ```
  *
+ * Prints:
  * ```text
  * Logging primitive:
  * └─ root (string): "Just a string"
  * ```
+ *
+ * @module
  */
 
 export * from "./src/object-property-tree.ts";
